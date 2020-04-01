@@ -27,7 +27,7 @@ gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_0.val = gdjs.evtTools.object.
 }if ( gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_0.val ) {
 {
 {gdjs.evtsExt__Create__CreateEnemy.conditionTrue_1 = gdjs.evtsExt__Create__CreateEnemy.condition1IsTrue_0;
-gdjs.evtsExt__Create__CreateEnemy.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7775060);
+gdjs.evtsExt__Create__CreateEnemy.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7734660);
 }
 }}
 if (gdjs.evtsExt__Create__CreateEnemy.condition1IsTrue_0.val) {
@@ -56,7 +56,7 @@ gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.createFrom(eventsFunctionConte
 gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1.createFrom(eventsFunctionContext.getObjects("Hp_Enemy"));
 {gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDHp_9595EnemyObjects1Objects, (gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.length !== 0 ? gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1[0] : null));
 }{for(var i = 0, len = gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1[i].putAroundObject((gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.length !== 0 ? gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1[0] : null), 70, 225);
+    gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1[i].putAroundObject((gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.length !== 0 ? gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1[0] : null), 75, 270);
 }
 }{for(var i = 0, len = gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1[i].setString(gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1[0].getVariables()).get("Hp")))));
