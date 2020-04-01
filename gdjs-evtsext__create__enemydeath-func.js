@@ -35,7 +35,7 @@ for(var i = 0, k = 0, l = gdjs.evtsExt__Create__EnemyDeath.GDEnemyObjects1.lengt
 gdjs.evtsExt__Create__EnemyDeath.GDEnemyObjects1.length = k;}if ( gdjs.evtsExt__Create__EnemyDeath.condition0IsTrue_0.val ) {
 {
 {gdjs.evtsExt__Create__EnemyDeath.conditionTrue_1 = gdjs.evtsExt__Create__EnemyDeath.condition1IsTrue_0;
-gdjs.evtsExt__Create__EnemyDeath.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7726916);
+gdjs.evtsExt__Create__EnemyDeath.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7685940);
 }
 }}
 if (gdjs.evtsExt__Create__EnemyDeath.condition1IsTrue_0.val) {

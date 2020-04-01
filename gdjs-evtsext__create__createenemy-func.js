@@ -7,31 +7,24 @@ gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects2= [];
 gdjs.evtsExt__Create__CreateEnemy.conditionTrue_0 = {val:false};
 gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_0 = {val:false};
 gdjs.evtsExt__Create__CreateEnemy.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Create__CreateEnemy.condition2IsTrue_0 = {val:false};
 gdjs.evtsExt__Create__CreateEnemy.conditionTrue_1 = {val:false};
 gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_1 = {val:false};
 gdjs.evtsExt__Create__CreateEnemy.condition1IsTrue_1 = {val:false};
-gdjs.evtsExt__Create__CreateEnemy.condition2IsTrue_1 = {val:false};
 
 
-gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDEnemyObjects1Objects = Hashtable.newFrom({"Enemy": gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1});gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDEnemyObjects1Objects = Hashtable.newFrom({"Enemy": gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1});gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDHp_9595EnemyObjects1Objects = Hashtable.newFrom({"Hp_Enemy": gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1});gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDHp_9595EnemyObjects1Objects = Hashtable.newFrom({"Hp_Enemy": gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1});gdjs.evtsExt__Create__CreateEnemy.eventsList0x5b7328 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDEnemyObjects1Objects = Hashtable.newFrom({"Enemy": gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1});gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDHp_9595EnemyObjects1Objects = Hashtable.newFrom({"Hp_Enemy": gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1});gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDHp_9595EnemyObjects1Objects = Hashtable.newFrom({"Hp_Enemy": gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1});gdjs.evtsExt__Create__CreateEnemy.eventsList0x5b7328 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
-gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.createFrom(eventsFunctionContext.getObjects("Enemy"));
 
 gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Create__CreateEnemy.condition1IsTrue_0.val = false;
 {
-gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_0.val = gdjs.evtTools.object.pickAllObjects(runtimeScene, gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDEnemyObjects1Objects);
-}if ( gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_0.val ) {
-{
-{gdjs.evtsExt__Create__CreateEnemy.conditionTrue_1 = gdjs.evtsExt__Create__CreateEnemy.condition1IsTrue_0;
-gdjs.evtsExt__Create__CreateEnemy.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7734660);
+{gdjs.evtsExt__Create__CreateEnemy.conditionTrue_1 = gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_0;
+gdjs.evtsExt__Create__CreateEnemy.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7366164);
 }
-}}
-if (gdjs.evtsExt__Create__CreateEnemy.condition1IsTrue_0.val) {
-/* Reuse gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1 */
+}if (gdjs.evtsExt__Create__CreateEnemy.condition0IsTrue_0.val) {
+gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.length = 0;
+
 gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDEnemyObjects1Objects, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("PositionX")) || 0 : 0), 100, "");
@@ -41,7 +34,7 @@ gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1.length = 0;
 }{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__Create__CreateEnemy.mapOfGDgdjs_46evtsExt_95_95Create_95_95CreateEnemy_46GDHp_9595EnemyObjects1Objects, 0, 0, "");
 }{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.length !== 0 ? gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1[0] : null), (gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1.length !== 0 ? gdjs.evtsExt__Create__CreateEnemy.GDHp_95EnemyObjects1[0] : null));
 }{for(var i = 0, len = gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1[i].addForce(0, 30, 1);
+    gdjs.evtsExt__Create__CreateEnemy.GDEnemyObjects1[i].addForce(0, 50, 1);
 }
 }}
 

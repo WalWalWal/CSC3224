@@ -8,6 +8,9 @@ gdjs.evtsExt__Create__Summon.GDAllyObjects3= [];
 gdjs.evtsExt__Create__Summon.GDZoneObjects1= [];
 gdjs.evtsExt__Create__Summon.GDZoneObjects2= [];
 gdjs.evtsExt__Create__Summon.GDZoneObjects3= [];
+gdjs.evtsExt__Create__Summon.GDHpObjects1= [];
+gdjs.evtsExt__Create__Summon.GDHpObjects2= [];
+gdjs.evtsExt__Create__Summon.GDHpObjects3= [];
 
 gdjs.evtsExt__Create__Summon.conditionTrue_0 = {val:false};
 gdjs.evtsExt__Create__Summon.condition0IsTrue_0 = {val:false};
@@ -21,7 +24,19 @@ gdjs.evtsExt__Create__Summon.condition2IsTrue_1 = {val:false};
 gdjs.evtsExt__Create__Summon.condition3IsTrue_1 = {val:false};
 
 
-gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDAllyObjects1Objects = Hashtable.newFrom({"Ally": gdjs.evtsExt__Create__Summon.GDAllyObjects1});gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDAllyObjects1Objects = Hashtable.newFrom({"Ally": gdjs.evtsExt__Create__Summon.GDAllyObjects1});gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDAllyObjects2Objects = Hashtable.newFrom({"Ally": gdjs.evtsExt__Create__Summon.GDAllyObjects2});gdjs.evtsExt__Create__Summon.eventsList0x6d052c = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDAllyObjects1Objects = Hashtable.newFrom({"Ally": gdjs.evtsExt__Create__Summon.GDAllyObjects1});gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDAllyObjects1Objects = Hashtable.newFrom({"Ally": gdjs.evtsExt__Create__Summon.GDAllyObjects1});gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDAllyObjects2Objects = Hashtable.newFrom({"Ally": gdjs.evtsExt__Create__Summon.GDAllyObjects2});gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDHpObjects2Objects = Hashtable.newFrom({"Hp": gdjs.evtsExt__Create__Summon.GDHpObjects2});gdjs.evtsExt__Create__Summon.eventsList0x68f4f4 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+{
+}
+
+}
+
+
+}; //End of gdjs.evtsExt__Create__Summon.eventsList0x68f4f4
+gdjs.evtsExt__Create__Summon.eventsList0x68eab4 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -53,7 +68,7 @@ for(var i = 0, k = 0, l = gdjs.evtsExt__Create__Summon.GDGoldObjects2.length;i<l
 gdjs.evtsExt__Create__Summon.GDGoldObjects2.length = k;}if ( gdjs.evtsExt__Create__Summon.condition1IsTrue_0.val ) {
 {
 {gdjs.evtsExt__Create__Summon.conditionTrue_1 = gdjs.evtsExt__Create__Summon.condition2IsTrue_0;
-gdjs.evtsExt__Create__Summon.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7860132);
+gdjs.evtsExt__Create__Summon.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7378756);
 }
 }}
 }
@@ -61,7 +76,11 @@ if (gdjs.evtsExt__Create__Summon.condition2IsTrue_0.val) {
 /* Reuse gdjs.evtsExt__Create__Summon.GDGoldObjects2 */
 /* Reuse gdjs.evtsExt__Create__Summon.GDZoneObjects2 */
 /* Reuse gdjs.evtsExt__Create__Summon.GDAllyObjects2 */
+gdjs.evtsExt__Create__Summon.GDHpObjects2.length = 0;
+
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDAllyObjects2Objects, (( gdjs.evtsExt__Create__Summon.GDZoneObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Create__Summon.GDZoneObjects2[0].getPointX("")), (( gdjs.evtsExt__Create__Summon.GDZoneObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Create__Summon.GDZoneObjects2[0].getPointY("")), "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDHpObjects2Objects, (( gdjs.evtsExt__Create__Summon.GDAllyObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Create__Summon.GDAllyObjects2[0].getPointX("")), (( gdjs.evtsExt__Create__Summon.GDAllyObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Create__Summon.GDAllyObjects2[0].getPointY("")), "");
+}{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.evtsExt__Create__Summon.GDHpObjects2.length !== 0 ? gdjs.evtsExt__Create__Summon.GDHpObjects2[0] : null), (gdjs.evtsExt__Create__Summon.GDAllyObjects2.length !== 0 ? gdjs.evtsExt__Create__Summon.GDAllyObjects2[0] : null));
 }{for(var i = 0, len = gdjs.evtsExt__Create__Summon.GDAllyObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Create__Summon.GDAllyObjects2[i].setHeight(100);
 }
@@ -71,7 +90,10 @@ if (gdjs.evtsExt__Create__Summon.condition2IsTrue_0.val) {
 }{for(var i = 0, len = gdjs.evtsExt__Create__Summon.GDGoldObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Create__Summon.GDGoldObjects2[i].returnVariable(gdjs.evtsExt__Create__Summon.GDGoldObjects2[i].getVariables().get("gold")).sub(500);
 }
-}}
+}
+{ //Subevents
+gdjs.evtsExt__Create__Summon.eventsList0x68f4f4(runtimeScene, eventsFunctionContext);} //End of subevents
+}
 
 }
 
@@ -105,7 +127,7 @@ for(var i = 0, k = 0, l = gdjs.evtsExt__Create__Summon.GDGoldObjects1.length;i<l
 gdjs.evtsExt__Create__Summon.GDGoldObjects1.length = k;}if ( gdjs.evtsExt__Create__Summon.condition1IsTrue_0.val ) {
 {
 {gdjs.evtsExt__Create__Summon.conditionTrue_1 = gdjs.evtsExt__Create__Summon.condition2IsTrue_0;
-gdjs.evtsExt__Create__Summon.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7163076);
+gdjs.evtsExt__Create__Summon.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7379700);
 }
 }}
 }
@@ -115,8 +137,8 @@ if (gdjs.evtsExt__Create__Summon.condition2IsTrue_0.val) {
 }
 
 
-}; //End of gdjs.evtsExt__Create__Summon.eventsList0x6d052c
-gdjs.evtsExt__Create__Summon.eventsList0x5b7328 = function(runtimeScene, eventsFunctionContext) {
+}; //End of gdjs.evtsExt__Create__Summon.eventsList0x68eab4
+gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDHpObjects1Objects = Hashtable.newFrom({"Hp": gdjs.evtsExt__Create__Summon.GDHpObjects1});gdjs.evtsExt__Create__Summon.eventsList0x5b7328 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -133,7 +155,7 @@ gdjs.evtsExt__Create__Summon.condition1IsTrue_0.val = gdjs.evtTools.input.isMous
 }if ( gdjs.evtsExt__Create__Summon.condition1IsTrue_0.val ) {
 {
 {gdjs.evtsExt__Create__Summon.conditionTrue_1 = gdjs.evtsExt__Create__Summon.condition2IsTrue_0;
-gdjs.evtsExt__Create__Summon.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7859564);
+gdjs.evtsExt__Create__Summon.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7378188);
 }
 }}
 }
@@ -151,8 +173,30 @@ if (gdjs.evtsExt__Create__Summon.condition2IsTrue_0.val) {
 }
 }
 { //Subevents
-gdjs.evtsExt__Create__Summon.eventsList0x6d052c(runtimeScene, eventsFunctionContext);} //End of subevents
+gdjs.evtsExt__Create__Summon.eventsList0x68eab4(runtimeScene, eventsFunctionContext);} //End of subevents
 }
+
+}
+
+
+{
+
+gdjs.evtsExt__Create__Summon.GDAllyObjects1.createFrom(eventsFunctionContext.getObjects("Ally"));
+gdjs.evtsExt__Create__Summon.GDHpObjects1.createFrom(eventsFunctionContext.getObjects("Hp"));
+
+gdjs.evtsExt__Create__Summon.condition0IsTrue_0.val = false;
+{
+gdjs.evtsExt__Create__Summon.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.evtsExt__Create__Summon.mapOfGDgdjs_46evtsExt_95_95Create_95_95Summon_46GDHpObjects1Objects, (gdjs.evtsExt__Create__Summon.GDAllyObjects1.length !== 0 ? gdjs.evtsExt__Create__Summon.GDAllyObjects1[0] : null));
+}if (gdjs.evtsExt__Create__Summon.condition0IsTrue_0.val) {
+/* Reuse gdjs.evtsExt__Create__Summon.GDAllyObjects1 */
+/* Reuse gdjs.evtsExt__Create__Summon.GDHpObjects1 */
+{for(var i = 0, len = gdjs.evtsExt__Create__Summon.GDHpObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Create__Summon.GDHpObjects1[i].putAroundObject((gdjs.evtsExt__Create__Summon.GDAllyObjects1.length !== 0 ? gdjs.evtsExt__Create__Summon.GDAllyObjects1[0] : null), 100, 90);
+}
+}{for(var i = 0, len = gdjs.evtsExt__Create__Summon.GDHpObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Create__Summon.GDHpObjects1[i].setString(gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__Create__Summon.GDAllyObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__Create__Summon.GDAllyObjects1[0].getVariables()).get("Hp")))));
+}
+}}
 
 }
 
@@ -160,12 +204,13 @@ gdjs.evtsExt__Create__Summon.eventsList0x6d052c(runtimeScene, eventsFunctionCont
 }; //End of gdjs.evtsExt__Create__Summon.eventsList0x5b7328
 
 
-gdjs.evtsExt__Create__Summon.func = function(runtimeScene, Gold, Ally, Zone, X_Pos, parentEventsFunctionContext) {
+gdjs.evtsExt__Create__Summon.func = function(runtimeScene, Gold, Ally, Zone, X_Pos, Hp, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 "Gold": Gold
 , "Ally": Ally
 , "Zone": Zone
+, "Hp": Hp
 },
   _behaviorNamesMap: {
 },
@@ -203,6 +248,9 @@ gdjs.evtsExt__Create__Summon.GDAllyObjects3.length = 0;
 gdjs.evtsExt__Create__Summon.GDZoneObjects1.length = 0;
 gdjs.evtsExt__Create__Summon.GDZoneObjects2.length = 0;
 gdjs.evtsExt__Create__Summon.GDZoneObjects3.length = 0;
+gdjs.evtsExt__Create__Summon.GDHpObjects1.length = 0;
+gdjs.evtsExt__Create__Summon.GDHpObjects2.length = 0;
+gdjs.evtsExt__Create__Summon.GDHpObjects3.length = 0;
 
 gdjs.evtsExt__Create__Summon.eventsList0x5b7328(runtimeScene, eventsFunctionContext);
 return;
