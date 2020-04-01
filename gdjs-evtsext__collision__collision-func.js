@@ -1,16 +1,16 @@
 gdjs.evtsExt__Collision__Collision = {};
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1= [];
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2= [];
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects3= [];
-gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1= [];
-gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects2= [];
-gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects3= [];
-gdjs.evtsExt__Collision__Collision.GDNewObjectObjects1= [];
-gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2= [];
-gdjs.evtsExt__Collision__Collision.GDNewObjectObjects3= [];
-gdjs.evtsExt__Collision__Collision.GDTextObjects1= [];
-gdjs.evtsExt__Collision__Collision.GDTextObjects2= [];
-gdjs.evtsExt__Collision__Collision.GDTextObjects3= [];
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects1= [];
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects2= [];
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects3= [];
+gdjs.evtsExt__Collision__Collision.GDCombatObjects1= [];
+gdjs.evtsExt__Collision__Collision.GDCombatObjects2= [];
+gdjs.evtsExt__Collision__Collision.GDCombatObjects3= [];
+gdjs.evtsExt__Collision__Collision.GDGoldObjects1= [];
+gdjs.evtsExt__Collision__Collision.GDGoldObjects2= [];
+gdjs.evtsExt__Collision__Collision.GDGoldObjects3= [];
+gdjs.evtsExt__Collision__Collision.GDAllyObjects1= [];
+gdjs.evtsExt__Collision__Collision.GDAllyObjects2= [];
+gdjs.evtsExt__Collision__Collision.GDAllyObjects3= [];
 
 gdjs.evtsExt__Collision__Collision.conditionTrue_0 = {val:false};
 gdjs.evtsExt__Collision__Collision.condition0IsTrue_0 = {val:false};
@@ -22,7 +22,38 @@ gdjs.evtsExt__Collision__Collision.condition1IsTrue_1 = {val:false};
 gdjs.evtsExt__Collision__Collision.condition2IsTrue_1 = {val:false};
 
 
-gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDEnemy_9595T1Objects1Objects = Hashtable.newFrom({"Enemy_T1": gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1});gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDGrard_9595r1Objects1Objects = Hashtable.newFrom({"Grard_r1": gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1});gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDGrard_9595r1Objects1Objects = Hashtable.newFrom({"Grard_r1": gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1});gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDTextObjects2Objects = Hashtable.newFrom({"Text": gdjs.evtsExt__Collision__Collision.GDTextObjects2});gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDNewObjectObjects2Objects = Hashtable.newFrom({"NewObject": gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2});gdjs.evtsExt__Collision__Collision.eventsList0x68eab4 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDEnemyObjects1Objects = Hashtable.newFrom({"Enemy": gdjs.evtsExt__Collision__Collision.GDEnemyObjects1});gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDAllyObjects1Objects = Hashtable.newFrom({"Ally": gdjs.evtsExt__Collision__Collision.GDAllyObjects1});gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDAllyObjects1Objects = Hashtable.newFrom({"Ally": gdjs.evtsExt__Collision__Collision.GDAllyObjects1});gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDCombatObjects2Objects = Hashtable.newFrom({"Combat": gdjs.evtsExt__Collision__Collision.GDCombatObjects2});gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDCombatObjects1Objects = Hashtable.newFrom({"Combat": gdjs.evtsExt__Collision__Collision.GDCombatObjects1});gdjs.evtsExt__Collision__Collision.eventsList0x71d87c = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+/* Reuse gdjs.evtsExt__Collision__Collision.GDEnemyObjects1 */
+
+gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.evtsExt__Collision__Collision.GDEnemyObjects1.length;i<l;++i) {
+    if ( gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[i].getVariableNumber(gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[i].getVariables().get("Hp")) <= 0 ) {
+        gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = true;
+        gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[k] = gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects1.length = k;}if (gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val) {
+/* Reuse gdjs.evtsExt__Collision__Collision.GDCombatObjects1 */
+/* Reuse gdjs.evtsExt__Collision__Collision.GDEnemyObjects1 */
+{gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDCombatObjects1Objects, (gdjs.evtsExt__Collision__Collision.GDEnemyObjects1.length !== 0 ? gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[0] : null));
+}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDCombatObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__Collision.GDCombatObjects1[i].removeTimer("Combat");
+}
+}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDCombatObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__Collision.GDCombatObjects1[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+}; //End of gdjs.evtsExt__Collision__Collision.eventsList0x71d87c
+gdjs.evtsExt__Collision__Collision.eventsList0x71d1dc = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -30,22 +61,20 @@ gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Col
 gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = false;
 {
 {gdjs.evtsExt__Collision__Collision.conditionTrue_1 = gdjs.evtsExt__Collision__Collision.condition0IsTrue_0;
-gdjs.evtsExt__Collision__Collision.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(6993724);
+gdjs.evtsExt__Collision__Collision.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7460148);
 }
 }if (gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val) {
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.createFrom(gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1);
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects2.createFrom(gdjs.evtsExt__Collision__Collision.GDEnemyObjects1);
 
-gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2.length = 0;
+gdjs.evtsExt__Collision__Collision.GDCombatObjects2.length = 0;
 
-gdjs.evtsExt__Collision__Collision.GDTextObjects2.createFrom(gdjs.evtsExt__Collision__Collision.GDTextObjects1);
-
-{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[i].resetTimer("Combat");
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDCombatObjects2Objects, (( gdjs.evtsExt__Collision__Collision.GDEnemyObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Collision__Collision.GDEnemyObjects2[0].getPointX("")) + 25, (( gdjs.evtsExt__Collision__Collision.GDEnemyObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Collision__Collision.GDEnemyObjects2[0].getPointY("")) + 100, "");
+}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDCombatObjects2.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__Collision.GDCombatObjects2[i].setScale(gdjs.evtsExt__Collision__Collision.GDCombatObjects2[i].getScale() * (0.05));
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDTextObjects2Objects, (( gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length === 0 ) ? 0 :gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[0].getPointX("")), (( gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length === 0 ) ? 0 :gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[0].getPointY("")) - 20, "");
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDNewObjectObjects2Objects, (( gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length === 0 ) ? 0 :gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[0].getPointX("")) + 25, (( gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length === 0 ) ? 0 :gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[0].getPointY("")) + 100, "");
-}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2[i].setScale(gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2[i].getScale() * (0.05));
+}{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.evtsExt__Collision__Collision.GDCombatObjects2.length !== 0 ? gdjs.evtsExt__Collision__Collision.GDCombatObjects2[0] : null), (gdjs.evtsExt__Collision__Collision.GDEnemyObjects2.length !== 0 ? gdjs.evtsExt__Collision__Collision.GDEnemyObjects2[0] : null));
+}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDCombatObjects2.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__Collision.GDCombatObjects2[i].resetTimer("Combat");
 }
 }}
 
@@ -54,96 +83,63 @@ gdjs.evtsExt__Collision__Collision.GDTextObjects2.createFrom(gdjs.evtsExt__Colli
 
 {
 
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.createFrom(gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1);
-
+gdjs.evtsExt__Collision__Collision.GDCombatObjects1.createFrom(eventsFunctionContext.getObjects("Combat"));
 
 gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[i].getVariableNumber(gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[i].getVariables().get("Hp")) <= 0 ) {
+for(var i = 0, k = 0, l = gdjs.evtsExt__Collision__Collision.GDCombatObjects1.length;i<l;++i) {
+    if ( gdjs.evtsExt__Collision__Collision.GDCombatObjects1[i].timerElapsedTime("Combat", 1) ) {
         gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = true;
-        gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[k] = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[i];
+        gdjs.evtsExt__Collision__Collision.GDCombatObjects1[k] = gdjs.evtsExt__Collision__Collision.GDCombatObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length = k;}if (gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val) {
-/* Reuse gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2 */
-gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2.createFrom(eventsFunctionContext.getObjects("NewObject"));
-gdjs.evtsExt__Collision__Collision.GDTextObjects2.createFrom(gdjs.evtsExt__Collision__Collision.GDTextObjects1);
-
-{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[i].removeTimer("Combat");
+gdjs.evtsExt__Collision__Collision.GDCombatObjects1.length = k;}if (gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val) {
+/* Reuse gdjs.evtsExt__Collision__Collision.GDAllyObjects1 */
+/* Reuse gdjs.evtsExt__Collision__Collision.GDCombatObjects1 */
+/* Reuse gdjs.evtsExt__Collision__Collision.GDEnemyObjects1 */
+{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDEnemyObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[i].returnVariable(gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[i].getVariables().get("Hp")).sub((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__Collision__Collision.GDAllyObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__Collision__Collision.GDAllyObjects1[0].getVariables()).get("Atk"))));
 }
-}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2[i].deleteFromScene(runtimeScene);
+}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDAllyObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__Collision.GDAllyObjects1[i].returnVariable(gdjs.evtsExt__Collision__Collision.GDAllyObjects1[i].getVariables().get("Hp")).sub((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__Collision__Collision.GDEnemyObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[0].getVariables()).get("Atk"))));
 }
-}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDTextObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDTextObjects2[i].deleteFromScene(runtimeScene);
+}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDCombatObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__Collision.GDCombatObjects1[i].resetTimer("Combat");
 }
-}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2[i].deleteFromScene(runtimeScene);
 }
-}}
-
+{ //Subevents
+gdjs.evtsExt__Collision__Collision.eventsList0x71d87c(runtimeScene, eventsFunctionContext);} //End of subevents
 }
-
-
-{
-
-/* Reuse gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1 */
-
-gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1.length;i<l;++i) {
-    if ( gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1[i].timerElapsedTime("Combat", 1) ) {
-        gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = true;
-        gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1[k] = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1[i];
-        ++k;
-    }
-}
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1.length = k;}if (gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val) {
-/* Reuse gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1 */
-/* Reuse gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1 */
-{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1[i].returnVariable(gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1[i].getVariables().get("Hp")).sub((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1[0].getVariables()).get("Atk"))));
-}
-}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1[i].resetTimer("Combat");
-}
-}}
 
 }
 
 
-}; //End of gdjs.evtsExt__Collision__Collision.eventsList0x68eab4
+}; //End of gdjs.evtsExt__Collision__Collision.eventsList0x71d1dc
 gdjs.evtsExt__Collision__Collision.eventsList0x5b7328 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1.createFrom(eventsFunctionContext.getObjects("Enemy_T1"));
-gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1.createFrom(eventsFunctionContext.getObjects("Grard_r1"));
+gdjs.evtsExt__Collision__Collision.GDAllyObjects1.createFrom(eventsFunctionContext.getObjects("Ally"));
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects1.createFrom(eventsFunctionContext.getObjects("Enemy"));
 
 gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = false;
 gdjs.evtsExt__Collision__Collision.condition1IsTrue_0.val = false;
 {
-gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDEnemy_9595T1Objects1Objects, gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDGrard_9595r1Objects1Objects, false, runtimeScene, true);
+gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDEnemyObjects1Objects, gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDAllyObjects1Objects, false, runtimeScene, true);
 }if ( gdjs.evtsExt__Collision__Collision.condition0IsTrue_0.val ) {
 {
 gdjs.evtsExt__Collision__Collision.condition1IsTrue_0.val = !(gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left"));
 }}
 if (gdjs.evtsExt__Collision__Collision.condition1IsTrue_0.val) {
-/* Reuse gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1 */
-/* Reuse gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1 */
-gdjs.evtsExt__Collision__Collision.GDTextObjects1.createFrom(eventsFunctionContext.getObjects("Text"));
-{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1[i].separateFromObjectsList(gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDGrard_9595r1Objects1Objects, false);
-}
-}{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDTextObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__Collision__Collision.GDTextObjects1[i].setString(gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1[0].getVariables()).get("Hp")))));
+/* Reuse gdjs.evtsExt__Collision__Collision.GDAllyObjects1 */
+/* Reuse gdjs.evtsExt__Collision__Collision.GDEnemyObjects1 */
+{for(var i = 0, len = gdjs.evtsExt__Collision__Collision.GDEnemyObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__Collision.GDEnemyObjects1[i].separateFromObjectsList(gdjs.evtsExt__Collision__Collision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95Collision_46GDAllyObjects1Objects, false);
 }
 }
 { //Subevents
-gdjs.evtsExt__Collision__Collision.eventsList0x68eab4(runtimeScene, eventsFunctionContext);} //End of subevents
+gdjs.evtsExt__Collision__Collision.eventsList0x71d1dc(runtimeScene, eventsFunctionContext);} //End of subevents
 }
 
 }
@@ -152,13 +148,13 @@ gdjs.evtsExt__Collision__Collision.eventsList0x68eab4(runtimeScene, eventsFuncti
 }; //End of gdjs.evtsExt__Collision__Collision.eventsList0x5b7328
 
 
-gdjs.evtsExt__Collision__Collision.func = function(runtimeScene, Enemy_T1, Grard_r1, NewObject, Text, parentEventsFunctionContext) {
+gdjs.evtsExt__Collision__Collision.func = function(runtimeScene, Enemy, Combat, Gold, Ally, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
-"Enemy_T1": Enemy_T1
-, "Grard_r1": Grard_r1
-, "NewObject": NewObject
-, "Text": Text
+"Enemy": Enemy
+, "Combat": Combat
+, "Gold": Gold
+, "Ally": Ally
 },
   _behaviorNamesMap: {
 },
@@ -186,18 +182,18 @@ var eventsFunctionContext = {
   }
 };
 
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects1.length = 0;
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects2.length = 0;
-gdjs.evtsExt__Collision__Collision.GDEnemy_95T1Objects3.length = 0;
-gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects1.length = 0;
-gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects2.length = 0;
-gdjs.evtsExt__Collision__Collision.GDGrard_95r1Objects3.length = 0;
-gdjs.evtsExt__Collision__Collision.GDNewObjectObjects1.length = 0;
-gdjs.evtsExt__Collision__Collision.GDNewObjectObjects2.length = 0;
-gdjs.evtsExt__Collision__Collision.GDNewObjectObjects3.length = 0;
-gdjs.evtsExt__Collision__Collision.GDTextObjects1.length = 0;
-gdjs.evtsExt__Collision__Collision.GDTextObjects2.length = 0;
-gdjs.evtsExt__Collision__Collision.GDTextObjects3.length = 0;
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects1.length = 0;
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects2.length = 0;
+gdjs.evtsExt__Collision__Collision.GDEnemyObjects3.length = 0;
+gdjs.evtsExt__Collision__Collision.GDCombatObjects1.length = 0;
+gdjs.evtsExt__Collision__Collision.GDCombatObjects2.length = 0;
+gdjs.evtsExt__Collision__Collision.GDCombatObjects3.length = 0;
+gdjs.evtsExt__Collision__Collision.GDGoldObjects1.length = 0;
+gdjs.evtsExt__Collision__Collision.GDGoldObjects2.length = 0;
+gdjs.evtsExt__Collision__Collision.GDGoldObjects3.length = 0;
+gdjs.evtsExt__Collision__Collision.GDAllyObjects1.length = 0;
+gdjs.evtsExt__Collision__Collision.GDAllyObjects2.length = 0;
+gdjs.evtsExt__Collision__Collision.GDAllyObjects3.length = 0;
 
 gdjs.evtsExt__Collision__Collision.eventsList0x5b7328(runtimeScene, eventsFunctionContext);
 return;
