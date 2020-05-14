@@ -9,7 +9,7 @@ gdjs.evtsExt__Collision__CharacterCollision.condition0IsTrue_0 = {val:false};
 gdjs.evtsExt__Collision__CharacterCollision.condition1IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__Collision__CharacterCollision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95CharacterCollision_46GDMainCharacterObjects1Objects = Hashtable.newFrom({"MainCharacter": gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1});gdjs.evtsExt__Collision__CharacterCollision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95CharacterCollision_46GDCollisionObjObjects1Objects = Hashtable.newFrom({"CollisionObj": gdjs.evtsExt__Collision__CharacterCollision.GDCollisionObjObjects1});gdjs.evtsExt__Collision__CharacterCollision.eventsList0x5b75c8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Collision__CharacterCollision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95CharacterCollision_46GDMainCharacterObjects1Objects = Hashtable.newFrom({"MainCharacter": gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1});gdjs.evtsExt__Collision__CharacterCollision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95CharacterCollision_46GDCollisionObjObjects1Objects = Hashtable.newFrom({"CollisionObj": gdjs.evtsExt__Collision__CharacterCollision.GDCollisionObjObjects1});gdjs.evtsExt__Collision__CharacterCollision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95CharacterCollision_46GDCollisionObjObjects1Objects = Hashtable.newFrom({"CollisionObj": gdjs.evtsExt__Collision__CharacterCollision.GDCollisionObjObjects1});gdjs.evtsExt__Collision__CharacterCollision.eventsList0x5b75c8 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -20,9 +20,19 @@ gdjs.evtsExt__Collision__CharacterCollision.condition0IsTrue_0.val = false;
 {
 gdjs.evtsExt__Collision__CharacterCollision.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.evtsExt__Collision__CharacterCollision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95CharacterCollision_46GDMainCharacterObjects1Objects, gdjs.evtsExt__Collision__CharacterCollision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95CharacterCollision_46GDCollisionObjObjects1Objects, false, runtimeScene, false);
 }if (gdjs.evtsExt__Collision__CharacterCollision.condition0IsTrue_0.val) {
+/* Reuse gdjs.evtsExt__Collision__CharacterCollision.GDCollisionObjObjects1 */
 /* Reuse gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1[i].activateBehavior("TopDownMovement", false);
+}
+}{for(var i = 0, len = gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1[i].returnVariable(gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1[i].getVariables().get("Collision")).add(1);
+}
+}{for(var i = 0, len = gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1[i].separateFromObjectsList(gdjs.evtsExt__Collision__CharacterCollision.mapOfGDgdjs_46evtsExt_95_95Collision_95_95CharacterCollision_46GDCollisionObjObjects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Collision__CharacterCollision.GDMainCharacterObjects1[i].activateBehavior("TopDownMovement", true);
 }
 }}
 
