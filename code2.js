@@ -44,7 +44,7 @@ gdjs.Win_40B_41Code.mapOfGDgdjs_46Win_9540B_9541Code_46GDbuttonObjects1Objects =
 gdjs.Win_40B_41Code.condition0IsTrue_0.val = false;
 {
 {gdjs.Win_40B_41Code.conditionTrue_1 = gdjs.Win_40B_41Code.condition0IsTrue_0;
-gdjs.Win_40B_41Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7017596);
+gdjs.Win_40B_41Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8943300);
 }
 }if (gdjs.Win_40B_41Code.condition0IsTrue_0.val) {
 gdjs.Win_40B_41Code.GDLifeObjects1.createFrom(runtimeScene.getObjects("Life"));
