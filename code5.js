@@ -1,48 +1,48 @@
-gdjs.GameOver_40I_41Code = {};
-gdjs.GameOver_40I_41Code.GDblackObjects1= [];
-gdjs.GameOver_40I_41Code.GDblackObjects2= [];
-gdjs.GameOver_40I_41Code.GDbuttonObjects1= [];
-gdjs.GameOver_40I_41Code.GDbuttonObjects2= [];
-gdjs.GameOver_40I_41Code.GDTitleObjects1= [];
-gdjs.GameOver_40I_41Code.GDTitleObjects2= [];
-gdjs.GameOver_40I_41Code.GDBackTitleObjects1= [];
-gdjs.GameOver_40I_41Code.GDBackTitleObjects2= [];
-gdjs.GameOver_40I_41Code.GDRetryObjects1= [];
-gdjs.GameOver_40I_41Code.GDRetryObjects2= [];
-gdjs.GameOver_40I_41Code.GDDiscriptionObjects1= [];
-gdjs.GameOver_40I_41Code.GDDiscriptionObjects2= [];
-gdjs.GameOver_40I_41Code.GDNewObjectObjects1= [];
-gdjs.GameOver_40I_41Code.GDNewObjectObjects2= [];
-gdjs.GameOver_40I_41Code.GDNewObject2Objects1= [];
-gdjs.GameOver_40I_41Code.GDNewObject2Objects2= [];
-gdjs.GameOver_40I_41Code.GDNewObject3Objects1= [];
-gdjs.GameOver_40I_41Code.GDNewObject3Objects2= [];
-gdjs.GameOver_40I_41Code.GDDescription2Objects1= [];
-gdjs.GameOver_40I_41Code.GDDescription2Objects2= [];
-gdjs.GameOver_40I_41Code.GDNewObject4Objects1= [];
-gdjs.GameOver_40I_41Code.GDNewObject4Objects2= [];
+gdjs.PauseCode = {};
+gdjs.PauseCode.GDblackObjects1= [];
+gdjs.PauseCode.GDblackObjects2= [];
+gdjs.PauseCode.GDbuttonObjects1= [];
+gdjs.PauseCode.GDbuttonObjects2= [];
+gdjs.PauseCode.GDPauseObjects1= [];
+gdjs.PauseCode.GDPauseObjects2= [];
+gdjs.PauseCode.GDBackTitleObjects1= [];
+gdjs.PauseCode.GDBackTitleObjects2= [];
+gdjs.PauseCode.GDContObjects1= [];
+gdjs.PauseCode.GDContObjects2= [];
+gdjs.PauseCode.GDDiscriptionObjects1= [];
+gdjs.PauseCode.GDDiscriptionObjects2= [];
+gdjs.PauseCode.GDNewObjectObjects1= [];
+gdjs.PauseCode.GDNewObjectObjects2= [];
+gdjs.PauseCode.GDNewObject2Objects1= [];
+gdjs.PauseCode.GDNewObject2Objects2= [];
+gdjs.PauseCode.GDNewObject3Objects1= [];
+gdjs.PauseCode.GDNewObject3Objects2= [];
+gdjs.PauseCode.GDDescription2Objects1= [];
+gdjs.PauseCode.GDDescription2Objects2= [];
+gdjs.PauseCode.GDNewObject4Objects1= [];
+gdjs.PauseCode.GDNewObject4Objects2= [];
 
-gdjs.GameOver_40I_41Code.conditionTrue_0 = {val:false};
-gdjs.GameOver_40I_41Code.condition0IsTrue_0 = {val:false};
-gdjs.GameOver_40I_41Code.condition1IsTrue_0 = {val:false};
-gdjs.GameOver_40I_41Code.condition2IsTrue_0 = {val:false};
-gdjs.GameOver_40I_41Code.conditionTrue_1 = {val:false};
-gdjs.GameOver_40I_41Code.condition0IsTrue_1 = {val:false};
-gdjs.GameOver_40I_41Code.condition1IsTrue_1 = {val:false};
-gdjs.GameOver_40I_41Code.condition2IsTrue_1 = {val:false};
+gdjs.PauseCode.conditionTrue_0 = {val:false};
+gdjs.PauseCode.condition0IsTrue_0 = {val:false};
+gdjs.PauseCode.condition1IsTrue_0 = {val:false};
+gdjs.PauseCode.condition2IsTrue_0 = {val:false};
+gdjs.PauseCode.conditionTrue_1 = {val:false};
+gdjs.PauseCode.condition0IsTrue_1 = {val:false};
+gdjs.PauseCode.condition1IsTrue_1 = {val:false};
+gdjs.PauseCode.condition2IsTrue_1 = {val:false};
 
 
-gdjs.GameOver_40I_41Code.mapOfGDgdjs_46GameOver_9540I_9541Code_46GDbuttonObjects1Objects = Hashtable.newFrom({"button": gdjs.GameOver_40I_41Code.GDbuttonObjects1});gdjs.GameOver_40I_41Code.mapOfGDgdjs_46GameOver_9540I_9541Code_46GDbuttonObjects1Objects = Hashtable.newFrom({"button": gdjs.GameOver_40I_41Code.GDbuttonObjects1});gdjs.GameOver_40I_41Code.mapOfGDgdjs_46GameOver_9540I_9541Code_46GDRetryObjects1Objects = Hashtable.newFrom({"Retry": gdjs.GameOver_40I_41Code.GDRetryObjects1});gdjs.GameOver_40I_41Code.mapOfGDgdjs_46GameOver_9540I_9541Code_46GDBackTitleObjects1Objects = Hashtable.newFrom({"BackTitle": gdjs.GameOver_40I_41Code.GDBackTitleObjects1});gdjs.GameOver_40I_41Code.eventsList0x5b70b8 = function(runtimeScene) {
+gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDbuttonObjects1Objects = Hashtable.newFrom({"button": gdjs.PauseCode.GDbuttonObjects1});gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDbuttonObjects1Objects = Hashtable.newFrom({"button": gdjs.PauseCode.GDbuttonObjects1});gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDContObjects1Objects = Hashtable.newFrom({"Cont": gdjs.PauseCode.GDContObjects1});gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDBackTitleObjects1Objects = Hashtable.newFrom({"BackTitle": gdjs.PauseCode.GDBackTitleObjects1});gdjs.PauseCode.eventsList0x5b70b8 = function(runtimeScene) {
 
 {
 
 
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = false;
+gdjs.PauseCode.condition0IsTrue_0.val = false;
 {
-{gdjs.GameOver_40I_41Code.conditionTrue_1 = gdjs.GameOver_40I_41Code.condition0IsTrue_0;
-gdjs.GameOver_40I_41Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10062204);
+{gdjs.PauseCode.conditionTrue_1 = gdjs.PauseCode.condition0IsTrue_0;
+gdjs.PauseCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8221092);
 }
-}if (gdjs.GameOver_40I_41Code.condition0IsTrue_0.val) {
+}if (gdjs.PauseCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "My Demons - Starset - (fan lyric video).mp3", 0, true, 30, 1);
 }}
 
@@ -51,15 +51,15 @@ gdjs.GameOver_40I_41Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().tr
 
 {
 
-gdjs.GameOver_40I_41Code.GDbuttonObjects1.createFrom(runtimeScene.getObjects("button"));
+gdjs.PauseCode.GDbuttonObjects1.createFrom(runtimeScene.getObjects("button"));
 
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = false;
+gdjs.PauseCode.condition0IsTrue_0.val = false;
 {
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.GameOver_40I_41Code.mapOfGDgdjs_46GameOver_9540I_9541Code_46GDbuttonObjects1Objects, runtimeScene, true, true);
-}if (gdjs.GameOver_40I_41Code.condition0IsTrue_0.val) {
-/* Reuse gdjs.GameOver_40I_41Code.GDbuttonObjects1 */
-{for(var i = 0, len = gdjs.GameOver_40I_41Code.GDbuttonObjects1.length ;i < len;++i) {
-    gdjs.GameOver_40I_41Code.GDbuttonObjects1[i].setAnimation(0);
+gdjs.PauseCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDbuttonObjects1Objects, runtimeScene, true, true);
+}if (gdjs.PauseCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.PauseCode.GDbuttonObjects1 */
+{for(var i = 0, len = gdjs.PauseCode.GDbuttonObjects1.length ;i < len;++i) {
+    gdjs.PauseCode.GDbuttonObjects1[i].setAnimation(0);
 }
 }}
 
@@ -68,15 +68,15 @@ gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnOb
 
 {
 
-gdjs.GameOver_40I_41Code.GDbuttonObjects1.createFrom(runtimeScene.getObjects("button"));
+gdjs.PauseCode.GDbuttonObjects1.createFrom(runtimeScene.getObjects("button"));
 
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = false;
+gdjs.PauseCode.condition0IsTrue_0.val = false;
 {
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.GameOver_40I_41Code.mapOfGDgdjs_46GameOver_9540I_9541Code_46GDbuttonObjects1Objects, runtimeScene, true, false);
-}if (gdjs.GameOver_40I_41Code.condition0IsTrue_0.val) {
-/* Reuse gdjs.GameOver_40I_41Code.GDbuttonObjects1 */
-{for(var i = 0, len = gdjs.GameOver_40I_41Code.GDbuttonObjects1.length ;i < len;++i) {
-    gdjs.GameOver_40I_41Code.GDbuttonObjects1[i].setAnimation(1);
+gdjs.PauseCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDbuttonObjects1Objects, runtimeScene, true, false);
+}if (gdjs.PauseCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.PauseCode.GDbuttonObjects1 */
+{for(var i = 0, len = gdjs.PauseCode.GDbuttonObjects1.length ;i < len;++i) {
+    gdjs.PauseCode.GDbuttonObjects1[i].setAnimation(1);
 }
 }}
 
@@ -85,18 +85,18 @@ gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnOb
 
 {
 
-gdjs.GameOver_40I_41Code.GDRetryObjects1.createFrom(runtimeScene.getObjects("Retry"));
+gdjs.PauseCode.GDContObjects1.createFrom(runtimeScene.getObjects("Cont"));
 
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = false;
-gdjs.GameOver_40I_41Code.condition1IsTrue_0.val = false;
+gdjs.PauseCode.condition0IsTrue_0.val = false;
+gdjs.PauseCode.condition1IsTrue_0.val = false;
 {
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.GameOver_40I_41Code.mapOfGDgdjs_46GameOver_9540I_9541Code_46GDRetryObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.GameOver_40I_41Code.condition0IsTrue_0.val ) {
+gdjs.PauseCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDContObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.PauseCode.condition0IsTrue_0.val ) {
 {
-gdjs.GameOver_40I_41Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+gdjs.PauseCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 }}
-if (gdjs.GameOver_40I_41Code.condition1IsTrue_0.val) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Normal", true);
+if (gdjs.PauseCode.condition1IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
 }}
 
 }
@@ -104,55 +104,55 @@ if (gdjs.GameOver_40I_41Code.condition1IsTrue_0.val) {
 
 {
 
-gdjs.GameOver_40I_41Code.GDBackTitleObjects1.createFrom(runtimeScene.getObjects("BackTitle"));
+gdjs.PauseCode.GDBackTitleObjects1.createFrom(runtimeScene.getObjects("BackTitle"));
 
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = false;
-gdjs.GameOver_40I_41Code.condition1IsTrue_0.val = false;
+gdjs.PauseCode.condition0IsTrue_0.val = false;
+gdjs.PauseCode.condition1IsTrue_0.val = false;
 {
-gdjs.GameOver_40I_41Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.GameOver_40I_41Code.mapOfGDgdjs_46GameOver_9540I_9541Code_46GDBackTitleObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.GameOver_40I_41Code.condition0IsTrue_0.val ) {
+gdjs.PauseCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDBackTitleObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.PauseCode.condition0IsTrue_0.val ) {
 {
-gdjs.GameOver_40I_41Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+gdjs.PauseCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 }}
-if (gdjs.GameOver_40I_41Code.condition1IsTrue_0.val) {
+if (gdjs.PauseCode.condition1IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Front", true);
 }}
 
 }
 
 
-}; //End of gdjs.GameOver_40I_41Code.eventsList0x5b70b8
+}; //End of gdjs.PauseCode.eventsList0x5b70b8
 
 
-gdjs.GameOver_40I_41Code.func = function(runtimeScene) {
+gdjs.PauseCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.GameOver_40I_41Code.GDblackObjects1.length = 0;
-gdjs.GameOver_40I_41Code.GDblackObjects2.length = 0;
-gdjs.GameOver_40I_41Code.GDbuttonObjects1.length = 0;
-gdjs.GameOver_40I_41Code.GDbuttonObjects2.length = 0;
-gdjs.GameOver_40I_41Code.GDTitleObjects1.length = 0;
-gdjs.GameOver_40I_41Code.GDTitleObjects2.length = 0;
-gdjs.GameOver_40I_41Code.GDBackTitleObjects1.length = 0;
-gdjs.GameOver_40I_41Code.GDBackTitleObjects2.length = 0;
-gdjs.GameOver_40I_41Code.GDRetryObjects1.length = 0;
-gdjs.GameOver_40I_41Code.GDRetryObjects2.length = 0;
-gdjs.GameOver_40I_41Code.GDDiscriptionObjects1.length = 0;
-gdjs.GameOver_40I_41Code.GDDiscriptionObjects2.length = 0;
-gdjs.GameOver_40I_41Code.GDNewObjectObjects1.length = 0;
-gdjs.GameOver_40I_41Code.GDNewObjectObjects2.length = 0;
-gdjs.GameOver_40I_41Code.GDNewObject2Objects1.length = 0;
-gdjs.GameOver_40I_41Code.GDNewObject2Objects2.length = 0;
-gdjs.GameOver_40I_41Code.GDNewObject3Objects1.length = 0;
-gdjs.GameOver_40I_41Code.GDNewObject3Objects2.length = 0;
-gdjs.GameOver_40I_41Code.GDDescription2Objects1.length = 0;
-gdjs.GameOver_40I_41Code.GDDescription2Objects2.length = 0;
-gdjs.GameOver_40I_41Code.GDNewObject4Objects1.length = 0;
-gdjs.GameOver_40I_41Code.GDNewObject4Objects2.length = 0;
+gdjs.PauseCode.GDblackObjects1.length = 0;
+gdjs.PauseCode.GDblackObjects2.length = 0;
+gdjs.PauseCode.GDbuttonObjects1.length = 0;
+gdjs.PauseCode.GDbuttonObjects2.length = 0;
+gdjs.PauseCode.GDPauseObjects1.length = 0;
+gdjs.PauseCode.GDPauseObjects2.length = 0;
+gdjs.PauseCode.GDBackTitleObjects1.length = 0;
+gdjs.PauseCode.GDBackTitleObjects2.length = 0;
+gdjs.PauseCode.GDContObjects1.length = 0;
+gdjs.PauseCode.GDContObjects2.length = 0;
+gdjs.PauseCode.GDDiscriptionObjects1.length = 0;
+gdjs.PauseCode.GDDiscriptionObjects2.length = 0;
+gdjs.PauseCode.GDNewObjectObjects1.length = 0;
+gdjs.PauseCode.GDNewObjectObjects2.length = 0;
+gdjs.PauseCode.GDNewObject2Objects1.length = 0;
+gdjs.PauseCode.GDNewObject2Objects2.length = 0;
+gdjs.PauseCode.GDNewObject3Objects1.length = 0;
+gdjs.PauseCode.GDNewObject3Objects2.length = 0;
+gdjs.PauseCode.GDDescription2Objects1.length = 0;
+gdjs.PauseCode.GDDescription2Objects2.length = 0;
+gdjs.PauseCode.GDNewObject4Objects1.length = 0;
+gdjs.PauseCode.GDNewObject4Objects2.length = 0;
 
-gdjs.GameOver_40I_41Code.eventsList0x5b70b8(runtimeScene);
+gdjs.PauseCode.eventsList0x5b70b8(runtimeScene);
 return;
 
 }
 
-gdjs['GameOver_40I_41Code'] = gdjs.GameOver_40I_41Code;
+gdjs['PauseCode'] = gdjs.PauseCode;
