@@ -40,7 +40,7 @@ gdjs.GameOver_40B_41Code.mapOfGDgdjs_46GameOver_9540B_9541Code_46GDbuttonObjects
 gdjs.GameOver_40B_41Code.condition0IsTrue_0.val = false;
 {
 {gdjs.GameOver_40B_41Code.conditionTrue_1 = gdjs.GameOver_40B_41Code.condition0IsTrue_0;
-gdjs.GameOver_40B_41Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7797332);
+gdjs.GameOver_40B_41Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8061212);
 }
 }if (gdjs.GameOver_40B_41Code.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "My Demons - Starset - (fan lyric video).mp3", 0, true, 30, 1);
