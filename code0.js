@@ -46,7 +46,7 @@ gdjs.FrontCode.mapOfGDgdjs_46FrontCode_46GDbuttonObjects1Objects = Hashtable.new
 gdjs.FrontCode.condition0IsTrue_0.val = false;
 {
 {gdjs.FrontCode.conditionTrue_1 = gdjs.FrontCode.condition0IsTrue_0;
-gdjs.FrontCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8190660);
+gdjs.FrontCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7559644);
 }
 }if (gdjs.FrontCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "My Demons - Starset - (fan lyric video).mp3", 0, true, 30, 1);
