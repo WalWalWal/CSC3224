@@ -40,7 +40,7 @@ gdjs.PauseCode.mapOfGDgdjs_46PauseCode_46GDbuttonObjects1Objects = Hashtable.new
 gdjs.PauseCode.condition0IsTrue_0.val = false;
 {
 {gdjs.PauseCode.conditionTrue_1 = gdjs.PauseCode.condition0IsTrue_0;
-gdjs.PauseCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7557844);
+gdjs.PauseCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7017292);
 }
 }if (gdjs.PauseCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "My Demons - Starset - (fan lyric video).mp3", 0, true, 30, 1);
